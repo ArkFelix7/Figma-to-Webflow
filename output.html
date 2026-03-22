@@ -1,0 +1,1213 @@
+<style>
+.nav_layout {
+  display: var(--flex-medium, flex);
+  flex-direction: var(--column-medium, row);
+  align-items: center;
+  gap: var(--_spacing---space--6);
+}
+
+.nav_button {
+  padding: var(--_spacing---space--4) var(--_spacing---space--8);
+  background-color: color-mix(in hsl, var(--_theme---button-primary--background) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--background-hover) calc(100% * var(--_trigger---off)));
+  color: color-mix(in hsl, var(--_theme---button-primary--text) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--text-hover) calc(100% * var(--_trigger---off)));
+  border-color: color-mix(in hsl, var(--_theme---button-primary--border) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--border-hover) calc(100% * var(--_trigger---off)));
+  border-width: var(--border-width--main);
+  border-radius: var(--radius--main);
+  transition: all 300ms;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.nav_content {
+  display: var(--flex-medium, flex);
+  flex-direction: var(--column-medium, row);
+  gap: var(--_spacing---space--7);
+}
+
+.nav_text_2 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.nav_text_3 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.nav_text_4 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.nav_text_5 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.nav_text_6 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.nav_text_7 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.header_layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.header_img {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.header_button {
+  padding: var(--_spacing---space--4) var(--_spacing---space--8);
+  background-color: color-mix(in hsl, var(--_theme---button-primary--background) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--background-hover) calc(100% * var(--_trigger---off)));
+  color: color-mix(in hsl, var(--_theme---button-primary--text) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--text-hover) calc(100% * var(--_trigger---off)));
+  border-color: color-mix(in hsl, var(--_theme---button-primary--border) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--border-hover) calc(100% * var(--_trigger---off)));
+  border-width: var(--border-width--main);
+  border-radius: var(--radius--main);
+  transition: all 300ms;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.header_text_2 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.header_text_3 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.header_title {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.feature_layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature_card_wrap {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--_theme---background-2);
+}
+
+.feature_card_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.feature_card_title {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.feature_card_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature_card_wrap_2 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--_theme---background-2);
+}
+
+.card_wrap_2_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.card_wrap_2_title {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.card_wrap_2_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature_card_wrap_3 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--_theme---background-2);
+}
+
+.card_wrap_3_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.card_wrap_3_title {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.feature_title {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.feature_subtitle {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.why_us_layout {
+  display: var(--flex-medium, grid);
+  flex-direction: column;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--_spacing---space--6);
+}
+
+.why_us_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.why_us_card_wrap {
+  display: var(--flex-medium, flex);
+  flex-direction: var(--column-medium, row);
+  gap: var(--_spacing---space--6);
+  background-color: var(--_theme---background-2);
+}
+
+.why_us_card_subtitle {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.why_us_card_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.why_us_card_img {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.why_us_card_wrap2 {
+  display: var(--flex-medium, flex);
+  flex-direction: var(--column-medium, row);
+  gap: var(--_spacing---space--6);
+  background-color: var(--_theme---background-2);
+}
+
+.us_card_wrap2_subtitle {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.us_card_wrap2_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.us_card_wrap2_img {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.why_us_card_wrap3 {
+  display: var(--flex-medium, flex);
+  flex-direction: var(--column-medium, row);
+  gap: var(--_spacing---space--6);
+  background-color: var(--_theme---background-2);
+}
+
+.us_card_wrap3_subtitle {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.us_card_wrap3_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.us_card_wrap3_img {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.why_us_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.why_us_title {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.why_us_subtitle {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.cta_layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta_deco {
+  padding: 0;
+}
+
+.cta_img {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.cta_button {
+  padding: var(--_spacing---space--4) var(--_spacing---space--8);
+  background-color: color-mix(in hsl, var(--_theme---button-primary--background) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--background-hover) calc(100% * var(--_trigger---off)));
+  color: color-mix(in hsl, var(--_theme---button-primary--text) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--text-hover) calc(100% * var(--_trigger---off)));
+  border-color: color-mix(in hsl, var(--_theme---button-primary--border) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--border-hover) calc(100% * var(--_trigger---off)));
+  border-width: var(--border-width--main);
+  border-radius: var(--radius--main);
+  transition: all 300ms;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.cta_text_2 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.cta_title {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.logos_layout {
+  display: var(--flex-medium, grid);
+  flex-direction: column;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--_spacing---space--6);
+}
+
+.discover_more_layout {
+  display: var(--flex-medium, grid);
+  flex-direction: column;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--_spacing---space--6);
+}
+
+.discover_more_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.discover_more_card_wrap {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--_theme---background-2);
+  border-radius: var(--radius--main);
+}
+
+.discover_more_card_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.discover_more_card_divider {
+  padding: 0;
+  background-color: var(--_theme---border);
+}
+
+.discover_more_card_block2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.discover_more_card_divider2 {
+  padding: 0;
+  background-color: var(--_theme---border);
+  height: 0.0625rem;
+  width: 100%;
+}
+
+.discover_more_card_divider3 {
+  padding: 0;
+  background-color: var(--_theme---border);
+  height: 0.0625rem;
+  width: 100%;
+}
+
+.discover_more_card_wrap2 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--_theme---background-2);
+  border-radius: var(--radius--main);
+}
+
+.more_card_wrap2_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.more_card_wrap2_divider {
+  padding: 0;
+  background-color: var(--_theme---border);
+}
+
+.more_card_wrap2_block2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.more_card_wrap2_img {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.more_card_wrap2_img2 {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.more_card_wrap2_img3 {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.discover_more_card_wrap3 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--_theme---background-2);
+  border-radius: var(--radius--main);
+}
+
+.more_card_wrap3_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.more_card_wrap3_divider {
+  padding: 0;
+  background-color: var(--_theme---border);
+}
+
+.more_card_wrap3_block2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.more_card_wrap3_divider2 {
+  padding: 0;
+  background-color: var(--_theme---border);
+  height: 0.0625rem;
+  width: 100%;
+}
+
+.more_card_wrap3_divider3 {
+  padding: 0;
+  background-color: var(--_theme---border);
+}
+
+.more_card_wrap3_divider4 {
+  padding: 0;
+  background-color: var(--_theme---border);
+}
+
+.more_card_wrap3_divider5 {
+  padding: 0;
+  background-color: var(--_theme---border);
+}
+
+.discover_more_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.discover_more_title {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.discover_more_subtitle {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.feature_2_layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature_2_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature_2_card_wrap {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--_theme---background-2);
+}
+
+.feature_2_card_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.feature_2_card_title {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.feature_2_card_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature_2_card_img {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.feature_2_card_divider {
+  padding: 0;
+  background-color: var(--_theme---border);
+  width: 0.0625rem;
+}
+
+.feature_2_card_img2 {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.feature_2_card_img3 {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.feature_2_card_img4 {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.feature_2_card_img5 {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.feature_2_divider {
+  padding: 0;
+  background-color: var(--_theme---border);
+  width: 0.0625rem;
+}
+
+.feature_2_card_wrap2 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--_theme---background-2);
+}
+
+.2_card_wrap2_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.2_card_wrap2_title {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.2_card_wrap2_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.2_card_wrap2_divider {
+  padding: 0;
+  background-color: var(--_theme---border);
+  height: 0.0625rem;
+  width: 100%;
+}
+
+.2_card_wrap2_divider2 {
+  padding: 0;
+  background-color: var(--_theme---border);
+  height: 0.0625rem;
+  width: 100%;
+}
+
+.2_card_wrap2_divider3 {
+  padding: 0;
+  background-color: var(--_theme---border);
+  height: 0.0625rem;
+  width: 100%;
+}
+
+.feature_2_divider_2 {
+  padding: 0;
+  background-color: var(--_theme---border);
+  width: 0.0625rem;
+}
+
+.feature_2_card_wrap3 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--_theme---background-2);
+}
+
+.2_card_wrap3_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.2_card_wrap3_title {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.2_card_wrap3_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.2_card_wrap3_img {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.2_card_wrap3_block3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.2_card_wrap3_img2 {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.feature_2_title {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.testimonial_layout {
+  display: var(--flex-medium, grid);
+  flex-direction: column;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--_spacing---space--6);
+}
+
+.testimonial_card_wrap {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--_theme---background-2);
+}
+
+.testimonial_card_eyebrow {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.testimonial_card_subtitle {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.testimonial_card_img {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.testimonial_card_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.testimonial_card_wrap_2 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--_theme---background-2);
+}
+
+.card_wrap_2_eyebrow {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.card_wrap_2_subtitle {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.card_wrap_2_img {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.card_wrap_2_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.testimonial_card_wrap_3 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--_theme---background-2);
+}
+
+.card_wrap_3_eyebrow {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.card_wrap_3_subtitle {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.card_wrap_3_img {
+  background-color: var(--_theme---background-skeleton);
+}
+
+.card_wrap_3_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.testimonial_title {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.cta_2_layout {
+  display: var(--flex-medium, flex);
+  flex-direction: var(--column-medium, row);
+  align-items: center;
+  gap: var(--_spacing---space--6);
+}
+
+.cta_2_button {
+  padding: var(--_spacing---space--4) var(--_spacing---space--8);
+  background-color: color-mix(in hsl, var(--_theme---button-primary--background) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--background-hover) calc(100% * var(--_trigger---off)));
+  color: color-mix(in hsl, var(--_theme---button-primary--text) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--text-hover) calc(100% * var(--_trigger---off)));
+  border-color: color-mix(in hsl, var(--_theme---button-primary--border) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--border-hover) calc(100% * var(--_trigger---off)));
+  border-width: var(--border-width--main);
+  border-radius: var(--radius--main);
+  transition: all 300ms;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta_2_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.cta_2_button_2 {
+  padding: var(--_spacing---space--3) var(--_spacing---space--5);
+  background-color: color-mix(in hsl, var(--_theme---button-primary--background) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--background-hover) calc(100% * var(--_trigger---off)));
+  color: color-mix(in hsl, var(--_theme---button-primary--text) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--text-hover) calc(100% * var(--_trigger---off)));
+  border-color: color-mix(in hsl, var(--_theme---button-primary--border) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--border-hover) calc(100% * var(--_trigger---off)));
+  border-width: var(--border-width--main);
+  transition: all 300ms;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta_2_text_2 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.cta_2_title {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_layout {
+  display: var(--flex-medium, grid);
+  flex-direction: column;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--_spacing---space--6);
+}
+
+.footer_deco {
+  padding: 0;
+}
+
+.footer_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_eyebrow {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_block_2 {
+  display: var(--flex-medium, grid);
+  flex-direction: column;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--_spacing---space--6);
+}
+
+.footer_block_6 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_divider {
+  padding: 0;
+  background-color: var(--_theme---border);
+  height: 0.0625rem;
+  width: 100%;
+}
+
+.footer_divider_2 {
+  padding: 0;
+  background-color: var(--_theme---border);
+  height: 0.0625rem;
+  width: 100%;
+}
+
+.footer_block_9 {
+  display: var(--flex-medium, grid);
+  flex-direction: column;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--_spacing---space--8);
+}
+
+.footer_block_10 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_text {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_button {
+  padding: var(--_spacing---space--4) var(--_spacing---space--8);
+  background-color: color-mix(in hsl, var(--_theme---button-primary--background) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--background-hover) calc(100% * var(--_trigger---off)));
+  color: color-mix(in hsl, var(--_theme---button-primary--text) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--text-hover) calc(100% * var(--_trigger---off)));
+  border-color: color-mix(in hsl, var(--_theme---button-primary--border) calc(100% * var(--_trigger---on)), var(--_theme---button-primary--border-hover) calc(100% * var(--_trigger---off)));
+  border-width: var(--border-width--main);
+  border-radius: var(--radius--main);
+  transition: all 300ms;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_text_2 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_3 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_4 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_5 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_6 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_7 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_8 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_9 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_10 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_11 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_12 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_13 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_14 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_15 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_16 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_17 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_18 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+
+.footer_text_19 {
+  margin-bottom: var(--_text-style---margin-bottom);
+}
+</style>
+
+<nav class="nav_wrap u-section u-theme-light">
+  <div class="nav_contain u-container">
+    <div class="nav_layout">
+      <a class="nav_button" data-trigger="hover focus">Free trial</a>
+      <div class="nav_content u-margin-trim">
+        <p class="nav_text_2 u-text-style-main">Contact</p>
+        <p class="nav_text_3 u-text-style-main">Blog</p>
+        <p class="nav_text_4 u-text-style-main">About Us</p>
+        <p class="nav_text_5 u-text-style-main">Pricing</p>
+        <p class="nav_text_6 u-text-style-main">Product</p>
+        <p class="nav_text_7 u-text-style-main">Home</p>
+      </div>
+      <div class="nav_logo">
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="header_wrap u-section u-theme-light">
+  <div class="header_contain u-container">
+    <div class="header_layout">
+      <img class="header_img" src="https://placehold.co/600x400" alt="Dashboard image" loading="lazy">
+      <div class="header_content u-margin-trim">
+        <div class="header_form u-button-wrapper">
+          <a class="header_button" data-trigger="hover focus">Get Free trial</a>
+          <p class="header_text_2 u-text-style-main">Enter your Email</p>
+        </div>
+        <p class="header_text_3 u-text-style-h6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+        <h1 class="header_title u-text-style-h1">The Best Software to Grow your Sales and Services</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature_wrap u-section u-theme-brand">
+  <div class="feature_contain u-container">
+    <div class="feature_layout">
+      <div class="feature_block">
+        <div class="feature_card_wrap">
+          <p class="feature_card_text u-text-style-main">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+          <h3 class="feature_card_title u-text-style-h3">Full time customer support - 24/7</h3>
+          <div class="feature_card_block">
+          </div>
+        </div>
+        <div class="feature_card_wrap_2">
+          <p class="card_wrap_2_text u-text-style-main">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+          <h3 class="card_wrap_2_title u-text-style-h3">Premium quality performance</h3>
+          <div class="card_wrap_2_block">
+          </div>
+        </div>
+        <div class="feature_card_wrap_3">
+          <p class="card_wrap_3_text u-text-style-main">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+          <h3 class="card_wrap_3_title u-text-style-h3">High security to protect from piracy</h3>
+          <div class="card_wrap_3_block">
+            <div class="card_wrap_3_icon" aria-hidden="true">
+              <div class="card_wrap_3_icon2" aria-hidden="true">
+                <div class="card_wrap_3_block2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="feature_title u-text-style-h1">We have the Best Solution for your Business</h1>
+      <h4 class="feature_subtitle u-text-style-h4">High-quality</h4>
+    </div>
+  </div>
+</section>
+
+<section class="why_us_wrap u-section u-theme-light">
+  <div class="why_us_contain u-container">
+    <div class="why_us_layout">
+      <div class="why_us_block">
+        <div class="why_us_card_wrap">
+          <h5 class="why_us_card_subtitle u-text-style-h5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h5>
+          <div class="why_us_card_block">
+            <img class="why_us_card_img" src="https://placehold.co/600x400" alt="Circle" loading="lazy">
+          </div>
+        </div>
+        <div class="why_us_card_wrap2">
+          <h5 class="us_card_wrap2_subtitle u-text-style-h5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h5>
+          <div class="us_card_wrap2_block">
+            <img class="us_card_wrap2_img" src="https://placehold.co/600x400" alt="Circle" loading="lazy">
+          </div>
+        </div>
+        <div class="why_us_card_wrap3">
+          <h5 class="us_card_wrap3_subtitle u-text-style-h5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h5>
+          <div class="us_card_wrap3_block">
+            <img class="us_card_wrap3_img" src="https://placehold.co/600x400" alt="Circle" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="why_us_content u-margin-trim">
+        <p class="why_us_text u-text-style-main">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.</p>
+        <h1 class="why_us_title u-text-style-h1">To upscale your business to the next level</h1>
+        <h4 class="why_us_subtitle u-text-style-h4">Why should you work with us?</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta_wrap u-section u-theme-light">
+  <div class="cta_contain u-container">
+    <div class="cta_layout">
+      <div class="cta_block">
+      </div>
+      <img class="cta_img" src="https://placehold.co/600x400" alt="Image" loading="lazy">
+      <div class="cta_content u-margin-trim u-button-wrapper">
+        <a class="cta_button" data-trigger="hover focus">Get Free trial</a>
+        <p class="cta_text_2 u-text-style-main">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.</p>
+        <h1 class="cta_title u-text-style-h1">More impressions, more conversions</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="logos_wrap u-section u-theme-light">
+  <div class="logos_contain u-container">
+    <div class="logos_layout">
+      <div class="logos_logo">
+      </div>
+      <div class="logos_logo_2">
+      </div>
+      <div class="logos_logo_3">
+      </div>
+      <div class="logos_logo_4">
+      </div>
+      <div class="logos_logo_5">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="discover_more_wrap u-section u-theme-light">
+  <div class="discover_more_contain u-container">
+    <div class="discover_more_layout">
+      <div class="discover_more_block">
+        <div class="discover_more_card_wrap">
+          <p class="discover_more_card_text u-text-style-h6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+          <div class="discover_more_card_divider">Activity Report</div>
+          <div class="discover_more_card_block">
+            <div class="discover_more_card_block2">
+              <div class="discover_more_card_icon" aria-hidden="true">
+                <div class="discover_more_card_icon2" aria-hidden="true">
+                  <div class="discover_more_card_divider2"></div>
+                </div>
+                <div class="discover_more_card_icon4" aria-hidden="true">
+                  <div class="discover_more_card_icon5" aria-hidden="true">
+                    <div class="discover_more_card_divider3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="discover_more_card_wrap2">
+          <p class="more_card_wrap2_text u-text-style-h6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+          <div class="more_card_wrap2_divider">Project Management</div>
+          <div class="more_card_wrap2_block">
+            <div class="more_card_wrap2_block2">
+              <div class="more_card_wrap2_icon" aria-hidden="true">
+                <div class="more_card_wrap2_icon2" aria-hidden="true">
+                </div>
+              </div>
+              <div class="more_card_wrap2_icon7" aria-hidden="true">
+                <div class="more_card_wrap2_icon8" aria-hidden="true">
+                </div>
+                <div class="more_card_wrap2_icon11" aria-hidden="true">
+                  <img class="more_card_wrap2_img" src="https://placehold.co/600x400" alt="椭圆形" loading="lazy">
+                  <img class="more_card_wrap2_img2" src="https://placehold.co/600x400" alt="椭圆形备份" loading="lazy">
+                  <img class="more_card_wrap2_img3" src="https://placehold.co/600x400" alt="椭圆形备份 2" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="discover_more_card_wrap3">
+          <p class="more_card_wrap3_text u-text-style-h6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+          <div class="more_card_wrap3_divider">Sales Tracking</div>
+          <div class="more_card_wrap3_block">
+            <div class="more_card_wrap3_block2">
+              <div class="more_card_wrap3_divider2"></div>
+              <div class="more_card_wrap3_divider3"></div>
+              <div class="more_card_wrap3_divider4"></div>
+              <div class="more_card_wrap3_divider5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="discover_more_content u-margin-trim">
+        <p class="discover_more_text u-text-style-main">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.</p>
+        <h1 class="discover_more_title u-text-style-h1">Analyze your sales and marketing leads</h1>
+        <h4 class="discover_more_subtitle u-text-style-h4">Discover More</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature_2_wrap u-section u-theme-brand">
+  <div class="feature_2_contain u-container">
+    <div class="feature_2_layout">
+      <div class="feature_2_block">
+        <div class="feature_2_card_wrap">
+          <p class="feature_2_card_text u-text-style-h6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+          <h2 class="feature_2_card_title u-text-style-h2">Customizable AI features</h2>
+          <div class="feature_2_card_block">
+            <div class="feature_2_card_icon" aria-hidden="true">
+              <div class="feature_2_card_icon2" aria-hidden="true">
+                <img class="feature_2_card_img" src="https://placehold.co/600x400" alt="Vector" loading="lazy">
+                <div class="feature_2_card_divider"></div>
+              </div>
+              <img class="feature_2_card_img2" src="https://placehold.co/600x400" alt="Vector" loading="lazy">
+              <img class="feature_2_card_img3" src="https://placehold.co/600x400" alt="Vector" loading="lazy">
+            </div>
+            <div class="feature_2_card_icon4" aria-hidden="true">
+              <img class="feature_2_card_img4" src="https://placehold.co/600x400" alt="Vector" loading="lazy">
+            </div>
+            <div class="feature_2_card_icon5" aria-hidden="true">
+              <img class="feature_2_card_img5" src="https://placehold.co/600x400" alt="Vector" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="feature_2_divider"></div>
+        <div class="feature_2_card_wrap2">
+          <p class="2_card_wrap2_text u-text-style-h6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+          <h2 class="2_card_wrap2_title u-text-style-h2">Simple collaboration tools</h2>
+          <div class="2_card_wrap2_block">
+            <div class="2_card_wrap2_icon" aria-hidden="true">
+            </div>
+            <div class="2_card_wrap2_icon3" aria-hidden="true">
+              <div class="2_card_wrap2_divider"></div>
+              <div class="2_card_wrap2_divider2"></div>
+              <div class="2_card_wrap2_divider3"></div>
+              <div class="2_card_wrap2_icon4" aria-hidden="true">
+              </div>
+            </div>
+            <div class="2_card_wrap2_icon7" aria-hidden="true">
+              <div class="2_card_wrap2_icon8" aria-hidden="true">
+              </div>
+              <div class="2_card_wrap2_icon10" aria-hidden="true">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature_2_divider_2"></div>
+        <div class="feature_2_card_wrap3">
+          <p class="2_card_wrap3_text u-text-style-h6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+          <h2 class="2_card_wrap3_title u-text-style-h2">Advanced 256-bit encryption</h2>
+          <div class="2_card_wrap3_block">
+            <div class="2_card_wrap3_block2">
+              <div class="2_card_wrap3_icon" aria-hidden="true">
+                <div class="2_card_wrap3_icon2" aria-hidden="true">
+                </div>
+                <img class="2_card_wrap3_img" src="https://placehold.co/600x400" alt="Vector" loading="lazy">
+              </div>
+            </div>
+            <div class="2_card_wrap3_block3">
+              <img class="2_card_wrap3_img2" src="https://placehold.co/600x400" alt="椭圆形" loading="lazy">
+              <div class="2_card_wrap3_icon11" aria-hidden="true">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="feature_2_title u-text-style-h1">Features</h1>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial_wrap u-section u-theme-light">
+  <div class="testimonial_contain u-container">
+    <div class="testimonial_layout">
+      <div class="testimonial_card_wrap">
+        <p class="testimonial_card_eyebrow u-text-style-small">CTO</p>
+        <h5 class="testimonial_card_subtitle u-text-style-h5">Sam Preston</h5>
+        <img class="testimonial_card_img" src="https://placehold.co/600x400" alt="https://www.pexels.com/photo/bearded-man-in-black-leather-jacket-3775534/" loading="lazy">
+        <p class="testimonial_card_text u-text-style-h6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      </div>
+      <div class="testimonial_card_wrap_2">
+        <p class="card_wrap_2_eyebrow u-text-style-small">Marketing Manager</p>
+        <h5 class="card_wrap_2_subtitle u-text-style-h5">Mark Mason</h5>
+        <img class="card_wrap_2_img" src="https://placehold.co/600x400" alt="https://www.pexels.com/photo/bearded-man-in-black-leather-jacket-3775534/" loading="lazy">
+        <p class="card_wrap_2_text u-text-style-h6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      </div>
+      <div class="testimonial_card_wrap_3">
+        <p class="card_wrap_3_eyebrow u-text-style-small">CEO</p>
+        <h5 class="card_wrap_3_subtitle u-text-style-h5">Ron Wood</h5>
+        <img class="card_wrap_3_img" src="https://placehold.co/600x400" alt="https://www.pexels.com/photo/photography-of-a-guy-wearing-green-shirt-1222271/" loading="lazy">
+        <p class="card_wrap_3_text u-text-style-h6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      </div>
+      <h1 class="testimonial_title u-text-style-h1">The stunning results our
+customers have experienced</h1>
+    </div>
+  </div>
+</section>
+
+<section class="cta_2_wrap u-section u-theme-light">
+  <div class="cta_2_contain u-container">
+    <div class="cta_2_layout">
+      <a class="cta_2_button" data-trigger="hover focus">View Pricing</a>
+      <a class="cta_2_button_2" data-trigger="hover focus">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer_wrap u-section u-theme-dark">
+  <div class="footer_contain u-container">
+    <div class="footer_layout">
+      <div class="footer_block">
+        <p class="footer_eyebrow u-text-style-small">© Copyright Finsweet 2022</p>
+        <div class="footer_block_2">
+          <div class="footer_block_3">
+            <div class="footer_block_4">
+            </div>
+          </div>
+          <div class="footer_block_5">
+            <div class="footer_block_6">
+            </div>
+          </div>
+          <div class="footer_block_7">
+          </div>
+          <div class="footer_block_8">
+          </div>
+        </div>
+        <div class="footer_divider"></div>
+        <div class="footer_divider_2"></div>
+      </div>
+      <div class="footer_block_9">
+        <div class="footer_block_10">
+          <div class="footer_form u-button-wrapper">
+            <p class="footer_text u-text-style-main">Enter your Email</p>
+            <a class="footer_button" data-trigger="hover focus">Subscribe</a>
+          </div>
+          <p class="footer_text_3 u-text-style-h6">Subscribe to our Newsletter</p>
+          <div class="footer_logo">
+          </div>
+        </div>
+        <div class="footer_content u-margin-trim">
+          <p class="footer_text_4 u-text-style-main">Remote Collaboration</p>
+          <p class="footer_text_5 u-text-style-main">Lead generate</p>
+          <p class="footer_text_6 u-text-style-main">Time schedule</p>
+          <p class="footer_text_7 u-text-style-main">Time tracker</p>
+          <p class="footer_text_8 u-text-style-main">Project managment</p>
+          <p class="footer_text_9 u-text-style-h6">Product</p>
+        </div>
+        <div class="footer_content_2 u-margin-trim">
+          <p class="footer_text_10 u-text-style-main">Contact Us</p>
+          <p class="footer_text_11 u-text-style-main">Blog</p>
+          <p class="footer_text_12 u-text-style-main">Terms and Condition</p>
+          <p class="footer_text_13 u-text-style-main">Privacy Policy</p>
+          <p class="footer_text_14 u-text-style-h6">Resources</p>
+        </div>
+        <div class="footer_content_3 u-margin-trim">
+          <p class="footer_text_15 u-text-style-main">Testimonial</p>
+          <p class="footer_text_16 u-text-style-main">Pricing</p>
+          <p class="footer_text_17 u-text-style-main">Why Choose us</p>
+          <p class="footer_text_18 u-text-style-main">About Us</p>
+          <p class="footer_text_19 u-text-style-h6">Company</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

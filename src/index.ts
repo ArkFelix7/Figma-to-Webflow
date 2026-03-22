@@ -1,33 +1,53 @@
 #!/usr/bin/env node
-import { runConversionFromFile, lumosOutputToHtml } from "./services/mappingService.js";
+import { convertFromFile } from "./pipeline.js";
+import { writeFileSync } from "fs";
 import { execSync } from "child_process";
 
-async function main() {
+function main() {
   const filePath = process.argv[2] || "./src/asset/figma.json";
-  console.log("Starting conversion for file:", filePath);
+  const outputPath = process.argv[3]; // optional: write to file
+  console.log("=== Figma → Webflow (Lumos Framework) Converter ===");
+  console.log(`Input: ${filePath}`);
+  console.log("");
+
   try {
-    console.log("Calling runConversionFromFile...");
-    const output = await runConversionFromFile(filePath);
-    console.log("Conversion completed successfully");
-    console.log(`Project: ${output.projectName}`);
-    console.log(`Total components: ${output.components.length}`);
-    if (output.report) {
-      console.log(`Lumos transformation report entries: ${output.report.length}`);
-      const warnings = output.report.flatMap((r) => r.warnings);
-      console.log(`Total warnings: ${warnings.length}`);
-      if (warnings.length > 0) {
-        console.log("Warnings summary:", warnings.slice(0, 20));
+    const result = convertFromFile(filePath);
+
+    console.log(`Sections detected: ${result.sections.length}`);
+    for (const section of result.sections) {
+      console.log(`  - ${section.sectionName} (${section.theme} theme)`);
+    }
+    console.log(`HTML length: ${result.html.length} characters`);
+
+    if (result.warnings.length > 0) {
+      console.log(`\nWarnings (${result.warnings.length}):`);
+      for (const w of result.warnings) {
+        console.log(`  ⚠ ${w}`);
       }
     }
 
-    const html = lumosOutputToHtml(output);
-    execSync(`echo "${html.replace(/"/g, '\\"')}" | pbcopy`);
-    console.log("HTML copied to clipboard.");
-    //console.log("Output length:", JSON.stringify(output).length, "characters");
-    console.log("HTML length:", html.length, "characters");
-    //console.log(JSON.stringify(output, null, 2));
+    // Output to file if path provided
+    if (outputPath) {
+      writeFileSync(outputPath, result.html, "utf-8");
+      console.log(`\nOutput written to: ${outputPath}`);
+    }
+
+    // Copy to clipboard (macOS)
+    try {
+      execSync("pbcopy", { input: result.html, encoding: "utf-8" });
+      console.log("\n✓ HTML copied to clipboard — paste into Webflow HTML Embed");
+    } catch {
+      // pbcopy not available (non-macOS) — silently skip
+    }
+
+    // Print preview
+    console.log("\n--- Output Preview ---");
+    console.log(result.html.substring(0, 500));
+    if (result.html.length > 500) console.log("...");
+
   } catch (error: any) {
     console.error("Conversion failed:", error?.message || error);
+    if (error?.stack) console.error(error.stack);
     process.exit(1);
   }
 }
